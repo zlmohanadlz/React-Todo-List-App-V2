@@ -68,39 +68,37 @@ function App() {
 	const editTaskHandle = useCallback(
 		(e, task) => {
 			e.stopPropagation();
-			// stop Duplicates
-
-			const duplicates = todoList.some(
-				(t) =>
-					t.title.trim().toLowerCase() === editTaskValue.trim().toLowerCase() &&
-					t.id !== editTaskId
-			);
-
-			if (duplicates) {
-				setError("This Is Task Is Already Been Added");
-				return;
-			}
-			if (
-				editTaskId === task.id &&
-				editTaskValue !== "" // **
-			) {
-				setTodoList((prev) => {
-					return prev.map((t) =>
+			setTodoList((prev) => {
+				// stop Duplicates
+				const duplicates = prev.some(
+					(t) =>
+						t.title.trim().toLowerCase() ===
+							editTaskValue.trim().toLowerCase() && t.id !== editTaskId
+				);
+				if (duplicates) {
+					setError("This Task Is Already Added");
+					return prev; // no change
+				}
+				if (editTaskId === task.id && editTaskValue !== "") {
+					const updatedList = prev.map((t) =>
 						t.id === task.id ? { ...t, title: editTaskValue } : t
 					);
-				});
-				setEditTaskId(null); // exit edit mode
-				setEditTaskValue("");
-				setError(null);
-			} else {
-				// Enter Edit Mode
-				setEditTaskId(task.id);
-				setEditTaskValue(task.title);
-				setError(null);
-			}
+					setEditTaskId(null); // exit edit mode
+					setEditTaskValue("");
+					setError(null);
+					return updatedList;
+				} else {
+					// Enter Edit Mode (no change to list)
+					setEditTaskId(task.id);
+					setEditTaskValue(task.title);
+					setError(null);
+					return prev;
+				}
+			});
 		},
-		[editTaskId, editTaskValue]
+		[editTaskId, editTaskValue] // ✅ no todoList dependency needed anymore
 	);
+
 	// Delete All Button
 
 	const deleteAll = useCallback(() => {
