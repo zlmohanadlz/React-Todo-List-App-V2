@@ -1,3 +1,4 @@
+/* ===== Global Styles ===== */
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -7,6 +8,15 @@
 	outline: none;
 }
 
+:root {
+	--primary-red: #f44336;
+	--primary-blue: #2878b9;
+	--primary-blue-dark: #23537a;
+	--input-bg: #fff;
+	--container-bg: #eee;
+}
+
+/* ===== Buttons ===== */
 button {
 	border: none;
 	color: white;
@@ -49,6 +59,42 @@ h1 {
 	padding: 10px;
 }
 
+button:hover {
+	opacity: 0.9;
+}
+
+/* ===== Headings ===== */
+h1 {
+	font-size: 30px;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+/* ===== Container ===== */
+.container {
+	width: 500px;
+	margin: 20px auto;
+	text-align: center;
+}
+
+/* ===== Input Field ===== */
+.field {
+	padding: 20px;
+	background-color: var(--container-bg);
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	border-radius: 6px;
+}
+
+.input {
+	flex: 1;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+}
+
+/* ===== Tasks List ===== */
 .tasks-container {
 	border-radius: 6px;
 	background-color: #eee;
