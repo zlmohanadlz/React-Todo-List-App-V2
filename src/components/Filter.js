@@ -5,7 +5,7 @@ function Filter({ onClick, filter, active }) {
 				type="radio"
 				name="filter"
 				id={filter}
-				onClick={onClick}
+				onChange={onClick}
 				checked={active}
 				className={active ? "filter active" : "filter"}
 			/>

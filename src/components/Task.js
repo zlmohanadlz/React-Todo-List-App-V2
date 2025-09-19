@@ -9,6 +9,7 @@ function Task({
 	deleteTask,
 	doneTask,
 }) {
+	const data = new Date();
 	return (
 		<li
 			onClick={() => doneTask(task.id)}
@@ -39,6 +40,13 @@ function Task({
 					Delete
 				</button>
 			</div>
+			<span className="date">
+				{data.toLocaleDateString("en-US", {
+					month: "long",
+					day: "numeric",
+					year: "numeric",
+				})}
+			</span>
 		</li>
 	);
 }

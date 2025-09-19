@@ -135,8 +135,8 @@ function App() {
 					{error}
 				</p>
 			)}
-			<fieldset>
-				<legend>Set Task Filter</legend>
+			<fieldset role="radiogroup" aria-labelledby="filter-legend">
+				<legend id="filter-legend">Set Task Filter</legend>
 				<Filter
 					onClick={() => setFilter("all")}
 					filter="Show All"
