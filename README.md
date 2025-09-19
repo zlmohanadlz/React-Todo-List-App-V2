@@ -13,7 +13,7 @@ A modern, interactive **Todo-List** app built with **React**.
 Features include: add, edit, delete, mark as completed, filter tasks, and edit multiple tasks simultaneously.  
 Tasks are saved in **localStorage** for persistence.
 
-**Live Demo:** (https://react-todo-list-app-gamma-eight.vercel.app)
+**Live Demo:** (https://react-todo-list-app-v2.vercel.app)
 
 ---
 
