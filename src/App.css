@@ -1,0 +1,130 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+*:focus {
+	outline: none;
+}
+
+button {
+	border: none;
+	color: white;
+	cursor: pointer;
+	border-radius: 6px;
+	background-color: #f44336;
+}
+
+h1 {
+	font-size: 30px;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+.container {
+	width: 500px;
+	margin: 20px auto;
+	text-align: center;
+}
+
+.field {
+	padding: 20px;
+	background-color: #eee;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	border-radius: 6px;
+}
+
+.input {
+	flex: 1;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+}
+
+.add,
+.remove-all {
+	background-color: #f44336;
+	padding: 10px;
+}
+
+.tasks-container {
+	border-radius: 6px;
+	background-color: #eee;
+	padding: 20px;
+	margin-top: 20px;
+	list-style-type: none;
+}
+
+.tasks {
+	list-style-type: none;
+	padding: 0;
+}
+
+.tasks li {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: white;
+	margin-bottom: 15px;
+	padding: 10px;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+.tasks li:hover {
+	background-color: #f7f7f7;
+}
+
+.tasks li button {
+	background-color: red;
+	font-weight: 600;
+	font-size: 10px;
+	padding: 2px 5px;
+}
+
+.tasks .done {
+	opacity: 0.5;
+}
+
+.buttons {
+	display: flex;
+	gap: 10px;
+}
+
+.filter {
+	background-color: #2878b9;
+	padding: 10px;
+	margin: 10px;
+}
+
+.filter.active,
+.filter:hover {
+	background-color: #23537a;
+}
+
+fieldset {
+	border: none;
+	margin: 5px;
+}
+
+input[type="radio"] {
+	display: none; /* hide the original Radio Box */
+}
+
+label {
+	display: inline-block;
+	padding: 8px 16px;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	margin-right: 5px;
+	border-radius: 6px;
+	transition: 0.3s;
+}
+
+input[type="radio"]:checked + label {
+	background-color: #007bff;
+	color: white;
+	border-color: #007bff;
+}
