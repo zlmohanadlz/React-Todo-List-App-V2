@@ -59,6 +59,7 @@ Tasks are saved in **localStorage** for persistence.
 - **Mark as Completed**: Toggle tasks completed/unfinished.
 - **Filter Tasks**: Show All, Finished, or Unfinished tasks.
 - **Duplicate Prevention**: Prevent adding the same task title.
+- **Date Task Tracking**: Track The Date Time Of All Task
 
 ---
 
