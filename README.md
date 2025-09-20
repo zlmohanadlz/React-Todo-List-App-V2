@@ -13,38 +13,6 @@ A modern, interactive **Todo-List** app built with **React**.
 Features include: add, edit, delete, mark as completed, filter tasks, and edit multiple tasks simultaneously.  
 Tasks are saved in **localStorage** for persistence.
 
-**Live Demo:** (https://react-todo-list-app-v2.vercel.app)
-
----
-
-## ✨ Features
-
-- **Add Task**: Add new tasks with unique titles.
-- **Edit Task**: Modify task titles individually.
-- **Edit Multiple Tasks**: Update multiple tasks at once.
-- **Delete Task**: Remove individual tasks.
-- **Remove All Tasks**: Clear the entire list.
-- **Mark as Completed**: Toggle tasks completed/unfinished.
-- **Filter Tasks**: Show All, Finished, or Unfinished tasks.
-- **Duplicate Prevention**: Prevent adding the same task title.
-
----
-
-# 📝 Todo-List React App
-
-![React](https://img.shields.io/badge/React-18-blue?logo=react&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?logo=javascript&logoColor=black)
-![CSS3](https://img.shields.io/badge/CSS3-blue?logo=css3&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green)
-
----
-
-## 🚀 Overview
-
-A modern, interactive **Todo-List** app built with **React**.  
-Features include: add, edit, delete, mark as completed, filter tasks, and edit multiple tasks simultaneously.  
-Tasks are saved in **localStorage** for persistence.
-
 **Live Demo:** _(add your deployment link here, e.g., Vercel or GitHub Pages)_
 
 ---
