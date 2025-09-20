@@ -1,4 +1,4 @@
-function Filter({ onClick, filter, active }) {
+function Filter({ onClick, filter, active, ariaLabel }) {
 	return (
 		<>
 			<input
@@ -8,6 +8,7 @@ function Filter({ onClick, filter, active }) {
 				onChange={onClick}
 				checked={active}
 				className={active ? "filter active" : "filter"}
+				aria-label={ariaLabel}
 			/>
 			<label htmlFor={filter}>{filter}</label>
 		</>

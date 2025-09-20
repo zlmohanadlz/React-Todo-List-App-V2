@@ -1,3 +1,4 @@
+import logo from "./logo.svg";
 import "./App.css";
 import { useState, useEffect, useRef, useCallback, useMemo } from "react";
 import Task from "./components/Task.js";
@@ -97,7 +98,6 @@ function App() {
 		},
 		[editTaskId, editTaskValue] // ✅ no todoList dependency needed anymore
 	);
-
 	// Delete All Button
 
 	const deleteAll = useCallback(() => {
@@ -125,7 +125,7 @@ function App() {
 					ref={input}
 					onKeyDown={(event) => event.key === "Enter" && addTask()}
 				/>
-				<button className="add" onClick={addTask}>
+				<button className="add" onClick={addTask} aria-label="Add a new Task">
 					Add Task
 				</button>
 			</div>
@@ -141,16 +141,19 @@ function App() {
 					onClick={() => setFilter("all")}
 					filter="Show All"
 					active={filter === "all"}
+					ariaLabel="show All Tasks"
 				/>
 				<Filter
 					onClick={() => setFilter("completed")}
 					filter="Finished Tasks"
 					active={filter === "completed"}
+					ariaLabel="show Finished Tasks"
 				/>
 				<Filter
 					onClick={() => setFilter("unfinished")}
 					filter="Unfinished Tasks"
 					active={filter === "unfinished"}
+					ariaLabel="show All Undone Tasks"
 				/>
 			</fieldset>
 			<div className="tasks-container">
