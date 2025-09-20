@@ -124,6 +124,7 @@ function App() {
 					type="text"
 					ref={input}
 					onKeyDown={(event) => event.key === "Enter" && addTask()}
+					maxLength={25}
 				/>
 				<button className="add" onClick={addTask} aria-label="Add a new Task">
 					Add Task
