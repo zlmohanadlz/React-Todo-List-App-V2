@@ -22,6 +22,7 @@ function Task({
 					onKeyDown={(e) => e.key === "Enter" && editTaskHandle(e, task)}
 					onClick={(e) => e.stopPropagation()}
 					autoFocus
+					maxLength={25}
 					placeholder="Task Mustn't be Empty"
 				/>
 			) : (
