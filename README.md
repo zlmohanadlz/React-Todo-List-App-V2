@@ -13,7 +13,7 @@ A modern, interactive **Todo-List** app built with **React**.
 Features include: add, edit, delete, mark as completed, filter tasks, and edit multiple tasks simultaneously.  
 Tasks are saved in **localStorage** for persistence.
 
-**Live Demo:** ()
+**Live Demo:** (https://68e2529049c3fff964093615--todo-list-vjss.netlify.app/)
 
 ---
 
